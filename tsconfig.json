@@ -3,32 +3,26 @@
         "target": "es5",
         "module": "commonjs",
         "moduleResolution": "node",
-        "sourceMap": true,
+        "sourceMap": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "lib": [
-            "es2015",
-            "dom"
-        ],
+        "removeComments": true,
         "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true,
-        "outDir": "./build",
+        "outDir": "build",
         "typeRoots": [
-            "./node_modules/@types",
-            "./node_modules"
-        ],
-        "types": []
+            "node_modules/@types/"
+        ]
     },
+    "compileOnSave": true,
     "files": [
+        "app/app.module.ts",
         "app/main.ts"
     ],
     "exclude": [
         "node_modules",
-        "build",
-        "dist",
-        "app/main.aot.ts"
+        "app/main.aot.ts",
+        "build/main.aot.ts"
     ],
-    "compileOnSave": false,
     "angularCompilerOptions": {
         "genDir": "build"
     }

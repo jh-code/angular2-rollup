@@ -6,7 +6,7 @@ module.exports = {
         ignoreInitial: true,
         ignored: ['node_modules']
     },
-    files: ['./build/**', './index.html'],
+    files: ['./app', '.' + index],
     server: {
         middleware: {
             // overrides the second middleware default with new settings
