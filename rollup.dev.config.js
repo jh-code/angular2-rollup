@@ -4,19 +4,16 @@ import angular from 'rollup-plugin-angular';
 import typescript from 'rollup-plugin-typescript';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
-import sass from 'node-sass';
+import postcss from 'rollup-plugin-postcss';
 
 export default {
     entry: 'app/main.ts',
     dest: 'dist/bundle.js',
     format: 'iife',
     plugins: [
-        angular({
-            preprocessors: {
-                style: scss => {
-                    return sass.renderSync({ data: scss }).css;
-                }
-            }
+        angular(),
+        postcss({
+            extensions: [ '.css' ]
         }),
         typescript({ typescript: require('typescript') }),
         nodeResolve({ jsnext: true, module: true }),
@@ -29,7 +26,8 @@ export default {
         }),
         livereload({
             watch: 'app',
-            verbose: true
+            verbose: true,
+            exts: [ 'ts', 'html', 'css', 'js', 'png', 'svg', 'gif', 'jpg' ]
         })
     ]
 };

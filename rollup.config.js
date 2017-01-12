@@ -2,10 +2,11 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import angular from 'rollup-plugin-angular';
 import typescript from 'rollup-plugin-typescript';
+import uglify from 'rollup-plugin-uglify';
 import sass from 'node-sass';
 
 export default {
-    entry: 'build/app/main.aot.js',
+    entry: 'app/main.aot.ts',
     dest: 'dist/bundle.js',
     format: 'iife',
     plugins: [
