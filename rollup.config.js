@@ -13,14 +13,14 @@ class RollupNG2 {
 const rollupNG2 = () => new RollupNG2();
 
 export default {
-    entry: 'dist/app/main.aot.js',
+    entry: 'build/app/main.aot.js',
     dest: 'dist/bundle.es2015.js',
     sourceMap: true,
     treeshake: true,
     moduleName: 'main',
     plugins: [
-        rollupNG2(),
         angular(),
+        rollupNG2(),
         nodeResolve({
             jsnext: true, main: true, module: true
         })

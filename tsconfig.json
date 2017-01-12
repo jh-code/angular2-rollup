@@ -12,7 +12,7 @@
         ],
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "./dist",
+        "outDir": "./build",
         "typeRoots": [
             "./node_modules/@types",
             "./node_modules"
@@ -24,11 +24,12 @@
     ],
     "exclude": [
         "node_modules",
+        "build",
         "dist",
         "app/main.aot.ts"
     ],
     "compileOnSave": false,
     "angularCompilerOptions": {
-        "genDir": "dist"
+        "genDir": "build"
     }
 }
