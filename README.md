@@ -17,3 +17,5 @@ Production
 -----
 
 It is currently working, but you have to do something first to "serve" the bundle in the browser. Run `npm run build` and rename the file `bs-config.js` to something else, then run `lite-server`. This is temporary.
+
+Running `npm run build` will bundle the application into the `dist` directory as `bundle.min.js`.
