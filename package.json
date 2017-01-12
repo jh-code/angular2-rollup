@@ -1,8 +1,7 @@
 {
-    "name": "angular2-min",
-    "version": "1.0.0",
+    "name": "angular2-rollup",
+    "version": "0.0.1",
     "description": "",
-    "main": "index.js",
     "scripts": {
         "clean-roll": "rimraf dist",
         "ngc": "ngc && cp -R app/* dist",
@@ -14,7 +13,7 @@
         "watch": "concurrently \"tsc -w\" \"lite-server\"",
         "start": "npm run clean-roll && tsc && npm run watch"
     },
-    "author": "Minko Gechev <mgechev@gmail.com>",
+    "author": "Jared Helgeson <jared@codeninja.guru>",
     "license": "MIT",
     "devDependencies": {
         "@angular/compiler-cli": "^2.4.3",
