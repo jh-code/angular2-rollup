@@ -9,8 +9,8 @@ export default {
     entry: 'app/main.ts',
     dest: 'dist/bundle.js',
     format: 'iife',
+    sourceMap: true,
     plugins: [
-        angular(),
         postcss({
             extensions: [ '.css' ],
             plugins: [ cssnano() ]
