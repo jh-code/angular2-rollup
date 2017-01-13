@@ -4,7 +4,7 @@ declare var module: any;
 
 @Component({
     selector: 'app-component',
-    styleUrls: ['./app/app.component.css'],
-    templateUrl: './app/app.component.html'
+    styleUrls: ['./app.component.css'],
+    templateUrl: './app.component.html'
 })
 export class AppComponent { }
