@@ -23,4 +23,4 @@ Run `npm run serve` to serve the minified bundle in the browser.
 Other Info
 -----
 
-Currently it doesn't bundle styles or even templates. This is a work in progress.
+Currently the only thing I need to add is getting rollup watch to trigger a rebuild when component stylesheets or templates are changed.
