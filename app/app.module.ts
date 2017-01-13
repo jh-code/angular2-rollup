@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, PreloadAllModules }   from '@angular/router';
+import { MaterialModule } from '@angular/material';
 import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
@@ -17,6 +17,7 @@ import { NoContentComponent } from './no-content/no-content.component';
     ],
     imports: [
         BrowserModule,
+        MaterialModule.forRoot(),
         routing
     ],
     bootstrap: [AppComponent]

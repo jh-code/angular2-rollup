@@ -1,4 +1,4 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NoContentComponent } from './no-content/no-content.component';
@@ -10,4 +10,4 @@ const routes: Routes = [
     { path: '**', component: NoContentComponent },
 ];
 
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules });
