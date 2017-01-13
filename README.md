@@ -17,7 +17,7 @@ Just run `npm start` and your app will be bundled and served in the browser with
 Production
 -----
 
-Running `npm run build` will bundle the application into the `dist` directory as `bundle.min.js`.
+Running `npm run build` will bundle the application into the `dist` directory as `bundle.js`.
 Run `npm run serve` to serve the minified bundle in the browser.
 
 Other Info
