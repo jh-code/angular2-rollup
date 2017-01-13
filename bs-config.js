@@ -5,7 +5,7 @@ module.exports = {
         ignoreInitial: true,
         ignored: ['node_modules']
     },
-    files: ['./dist', './index.html'],
+    files: ['./dist/bundle.js', './index.html'],
     server: {
         middleware: {
             // overrides the second middleware default with new settings

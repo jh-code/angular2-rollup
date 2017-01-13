@@ -9,7 +9,7 @@
         "removeComments": false,
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "build",
+        "outDir": "build/aot",
         "typeRoots": [
             "node_modules/@types/"
         ]
@@ -19,7 +19,7 @@
         "app/main.aot.ts"
     ],
     "angularCompilerOptions": {
-        "genDir": "build",
+        "genDir": "build/aot",
         "debug": true
     }
 }

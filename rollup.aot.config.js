@@ -8,7 +8,7 @@ import uglify from 'rollup-plugin-uglify';
 
 export default {
     entry: 'app/main.aot.ts',
-    dest: 'dist/bundle.js',
+    dest: 'dist/bundle.min.js',
     format: 'iife',
     treeshake: true,
     plugins: [

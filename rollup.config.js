@@ -15,6 +15,7 @@ export default {
             extensions: [ '.css' ],
             plugins: [ cssnano() ]
         }),
+        angular(),
         typescript({ typescript: require('typescript') }),
         nodeResolve({ jsnext: true, module: true }),
         commonjs({ include: 'node_modules/rxjs/**' })

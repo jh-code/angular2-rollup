@@ -3,14 +3,15 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "build": "npm run clean && npm run ngc && npm run rollup:prod",
-    "clean": "rimraf dist build",
+    "build": "npm run clean:prod && npm run ngc && npm run rollup:prod",
+    "clean:prod": "rimraf build/aot dist/bundle.min.js",
+    "clean:dev": "rimraf build/jit dist/bundle.js dist/bundle.js.map",
     "compass": "compass watch",
     "ngc": "ngc -p tsconfig.aot.json",
     "rollup:dev": "rollup -cw",
     "rollup:prod": "rollup -c rollup.aot.config.js",
     "serve": "lite-server",
-    "start": "npm run clean && tsc && npm-run-all --parallel compass rollup:dev serve"
+    "start": "npm run clean:dev && tsc && npm-run-all --parallel compass rollup:dev serve"
   },
   "author": "Jared Helgeson <jared@codeninja.guru>",
   "license": "MIT",
