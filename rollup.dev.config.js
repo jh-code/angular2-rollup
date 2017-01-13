@@ -3,7 +3,6 @@ import commonjs from 'rollup-plugin-commonjs';
 import angular from 'rollup-plugin-angular';
 import typescript from 'rollup-plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
-import nested from 'postcss-cssnext';
 import cssnano from 'cssnano';
 
 export default {

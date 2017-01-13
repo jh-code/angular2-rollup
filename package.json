@@ -11,7 +11,7 @@
     "build": "npm run clean && npm run ngc:prod && npm run rollup:prod",
     "serve": "lite-server",
     "compass": "compass watch",
-    "start": "npm run clean && npm run ngc:dev && mkdir dist && npm-run-all --parallel compass rollup:dev serve"
+    "start": "npm run clean && npm run ngc:dev && npm-run-all --parallel compass rollup:dev serve"
   },
   "author": "Jared Helgeson <jared@codeninja.guru>",
   "license": "MIT",
