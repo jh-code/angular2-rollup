@@ -2,7 +2,3 @@
 h1 {
   color: #333;
 }
-/* line 4, app.component.scss */
-h1 span {
-  color: blue;
-}
